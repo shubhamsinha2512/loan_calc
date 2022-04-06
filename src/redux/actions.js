@@ -5,17 +5,16 @@ export const setUser = (user)=>{
     }
 }
 
-export const deleteUser = (user)=>{
+export const deleteUser = ()=>{
     return {
         type: "DELETE_USER",
-        payload: user
     }
 }
 
 export const setLoans = (loans)=>{
     return {
         type: "SET_LOANS",
-        payload: loan
+        payload: loans
     }
 }
 

@@ -1,9 +1,9 @@
-const testInitial = {
-    email : "shubham.sinha2512@gmmail.com",
-    isAdmin : true
-}
+// const testInitial = {
+//     email : "shubham.sinha2512@gmail.com",
+//     // isAdmin : true
+// }
 
-const userReducer = (state=testInitial, action) => {
+const userReducer = (state=null, action) => {
     
     switch(action.type){
         case "SET_USER": return action.payload;

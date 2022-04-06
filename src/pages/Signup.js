@@ -66,7 +66,8 @@ function Signup() {
   return (
       <>
       <Nav />
-      <Card>
+      <Card className='my-4'>
+          <h1>Signup</h1>
           <Card.Body className='d-flex align-items-center justify-content-center'>
             <div>
                 <Form>
@@ -79,6 +80,7 @@ function Signup() {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" name="password" value={details.password} onChange={handleChange} />
                     </Form.Group>
+                    
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                         <Form.Check type="checkbox" label="Admin Account" name="isAdmin" value={details.isAdmin} onChange={handleChange}  />
                     </Form.Group>
@@ -88,7 +90,7 @@ function Signup() {
                 </Form>
             </div>
           </Card.Body>
-          <Link to="/login">Don't have an account?</Link>
+          <Link to="/login">Already have an account?</Link>
       </Card>
       </>
   )
